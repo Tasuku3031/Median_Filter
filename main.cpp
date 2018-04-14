@@ -29,8 +29,8 @@ int main(void) {
 			int tmp = 0, b[10000] = { 0 }, g[10000] = { 0 }, r[10000] = { 0 }, medb = 0, medg = 0, medr = 0;
 			for (int i = (k - 1) / 2; i < ((k - 1) / 2) + k; i++) {
 				for (int j = (k - 1) / 2; j < ((k - 1) / 2) + k; j++) {
-					int s = y - i;
-					int t = x - j;
+					int s = y + (i - (k + 1) / 2);
+					int t = x + (j - (k + 1) / 2);
 					if (s < 0) {
 						s = 0;
 					}
